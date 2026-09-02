@@ -1,0 +1,56 @@
+name: branchpad
+description: Win — BranchPad
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  flagsmith: ^6.1.1
+  http: ^1.6.0
+  connectivity_plus: ^7.3.1
+  webview_flutter: ^4.14.1
+  shared_preferences: ^2.5.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+  flutter_native_splash: ^2.4.6
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/icon.png
+    - assets/images/icon_splash.png
+    - assets/json/
+
+  fonts:
+    - family: AppFont
+      fonts:
+        - asset: assets/fonts/Figtree-SemiBold.ttf
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  remove_alpha_ios: true
+  image_path: "assets/images/icon.png"
+  min_sdk_android: 24
+  adaptive_icon_background: "#FAF7F2"
+  adaptive_icon_foreground: "assets/images/icon.png"
+
+flutter_native_splash:
+  color: "#FAF7F2"
+  image: assets/images/icon_splash.png
+  android_12:
+    image: assets/images/icon_splash.png
+    color: "#FAF7F2"
+    icon_background_color: "#FAF7F2"
